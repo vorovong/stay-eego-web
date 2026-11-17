@@ -25,6 +25,17 @@
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://stayeego.com/reviews.html">
 <meta name="twitter:card" content="summary_large_image">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-72NQ8WRSH5"></script>
+<script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}
+if (location.hostname !== 'stayeego.com') window['ga-disable-G-72NQ8WRSH5'] = true;  // local previews are not counted
+gtag('consent', 'default', {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});
+gtag('consent', 'default', {analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
+gtag('js', new Date()); gtag('config', 'G-72NQ8WRSH5', {allow_google_signals: false});
+document.addEventListener('click', function (e) { var a = e.target.closest && e.target.closest('a[href]'); if (!a) return;
+  var h = a.getAttribute('href') || '';
+  if (/airbnb\./.test(h)) gtag('event', 'booking_click', {link_url: a.href});
+  else if (/(^|\/)book\.html/.test(h)) gtag('event', 'calendar_open', {link_url: a.href}); });</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "752a172775df4c0fae4427a42d4a7b02"}'></script>
 <!-- seo:end -->
 <meta name="theme-color" content="#1F3A2B">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
@@ -407,6 +418,11 @@ p { text-wrap: pretty; }
 .foot { margin-top: 72px; padding-top: 26px; border-top: 1px solid rgba(255, 255, 255, .18); display: grid; gap: 10px; font-size: 14px; color: rgba(255, 255, 255, .66); }
 .foot .wordmark { color: var(--white); font-size: 20px; }
 .foot-links { display: grid; gap: 8px; }
+.foot-links .foot-small { font-size: 13px; color: var(--muted); }
+.band.policy h2 { font-size: 21px; margin-top: 40px; }
+.band.policy h2:first-child { margin-top: 0; }
+.band.policy .copy > p + p { margin-top: 12px; }
+.policy-date { margin-top: 40px; font-size: 14px; color: var(--muted); }
 .foot-langs { display: flex; flex-wrap: wrap; gap: 6px 20px; grid-column: 1 / -1; padding-top: 6px; }
 .foot-langs a[aria-current] { color: var(--white); text-decoration: none; }
 
@@ -1062,6 +1078,7 @@ main.sub { padding-top: 64px; }
       <p class="foot-links">
         <a href="https://www.instagram.com/stay.eego/" target="_blank" rel="noopener" data-i18n="footInsta">인스타그램 @stay.eego</a>
         <a href="picks.html" data-i18n="footGuide">네네가 추천하는 행궁동 단골집</a>
+        <a class="foot-small" href="privacy.html" data-i18n="footPrivacy">개인정보 처리방침</a>
       </p>
       <!-- Plain links to each language's address, for visitors without the menu and for crawlers. The build points them one level up on the language pages. -->
       <nav class="foot-langs" aria-label="Languages">
