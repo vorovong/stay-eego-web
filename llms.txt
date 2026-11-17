@@ -80,4 +80,40 @@ Airbnb ratings: Garden room 4.99, Alleyway room 4.98, from 388 reviews in total.
 - [Airbnb: Garden room](https://www.airbnb.com/rooms/8525016)
 - [Airbnb: Alleyway room](https://www.airbnb.com/rooms/1070715217838494598)
 - [Instagram](https://www.instagram.com/stay.eego/)
-- [The hosts’ neighbourhood guide](https://vorovong.github.io/stay-eego-site/)
+- [Our story](https://stayeego.com/en/story.html)
+- [The stay](https://stayeego.com/en/house.html)
+- [Guest reviews](https://stayeego.com/en/reviews.html)
+- [Getting here](https://stayeego.com/en/access.html)
+- [Haenggung-dong local picks](https://stayeego.com/en/picks.html)
+
+## Local picks (the hosts’ own list)
+
+- 이도경 떡볶이 (Yidokyeong Tteokbokki): Korean · Tteokbokki
+- 예박사 (Yebaksa): Korean · Grilled beef
+- 입주집 (Ipjujip): Korean · Gopchang
+- 대길소금구이 (Daegil Sogeumgui): Korean · Salt-grilled pork
+- 평장원 (Pyeongjangwon): Korean · Pyongyang naengmyeon
+- 대왕칼국수 (Daewang Kalguksu): Korean · Kalguksu
+- 골목집 (Golmokjip): Korean · Home cooking
+- 서문수산 (Seomun Susan): Korean · Seafood
+- 시골집 우렁이쌈밥 (Sigoljip Ureongi Ssam-bap): Korean · Ssam-bap / sashimi
+- 미트테일 (Meat Tale): Western · Bakery
+- 연밀 (Yeonmil): Chinese · Dumplings
+- 수원만두 (Suwon Mandu): Chinese · Old favorite
+- 노스모크 워드아웃 파이어 유림점 (No Smoke Without Fire, Yurim): Cafe · Specialty
+- 위해브투데이 (We Have Today): Cafe · Haenggung view
+- 그루비 (Groovy): Cafe · Jazz
+- 아우토그라프 (Autograph): Cafe · Hand drip
+- 프리히 (Freeh): Cake · Mousse
+- 원모어케이크 (One More Cake): Cake · Lettering
+- 파트브리제 (Pate Brisee): Cookies · Scones
+- 에버닌 (Everneen): Bread · Sourdough
+- 솔트 팩토리 (Salt Factory): Bread · Salt bread
+- 츄플러스 (Chuplus): Churros · Injeolmi
+- 딩동 (Dingdong): Dessert · Neighborhood
+- 사케도로보 (Sakedorobo): Izakaya · Nihonshu
+- 유동골뱅이 (Yudong Golbaengi): Pub · Sea snails
+- 산적 (Sanjeok): Traditional pub · Old school
+- 브로콜리숲 (Broccoli Forest): Independent bookstore
+- 서아샵 (Seoa Shop): Plants · Flower shop
+- 파닥파닥클럽 (Padak Padak Club): Jazz · Live

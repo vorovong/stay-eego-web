@@ -60,4 +60,304 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/"/>
   </url>
+  <url>
+    <loc>https://stayeego.com/story.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/story.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/story.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/story.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/story.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/story.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/story.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/story.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/en/story.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/story.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/story.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/story.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/story.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/story.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/story.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/story.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/ja/story.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/story.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/story.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/story.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/story.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/story.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/story.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/story.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/zh/story.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/story.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/story.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/story.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/story.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/story.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/story.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/story.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/zh-tw/story.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/story.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/story.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/story.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/story.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/story.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/story.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/story.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/fr/story.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/story.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/story.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/story.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/story.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/story.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/story.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/story.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/house.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/house.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/house.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/house.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/house.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/house.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/house.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/house.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/en/house.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/house.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/house.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/house.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/house.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/house.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/house.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/house.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/ja/house.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/house.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/house.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/house.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/house.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/house.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/house.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/house.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/zh/house.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/house.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/house.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/house.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/house.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/house.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/house.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/house.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/zh-tw/house.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/house.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/house.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/house.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/house.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/house.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/house.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/house.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/fr/house.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/house.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/house.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/house.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/house.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/house.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/house.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/house.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/reviews.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/reviews.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/en/reviews.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/reviews.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/ja/reviews.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/reviews.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/zh/reviews.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/reviews.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/zh-tw/reviews.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/reviews.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/fr/reviews.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/reviews.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/reviews.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/access.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/access.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/access.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/access.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/access.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/access.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/access.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/access.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/en/access.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/access.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/access.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/access.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/access.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/access.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/access.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/access.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/ja/access.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/access.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/access.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/access.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/access.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/access.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/access.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/access.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/zh/access.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/access.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/access.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/access.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/access.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/access.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/access.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/access.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/zh-tw/access.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/access.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/access.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/access.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/access.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/access.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/access.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/access.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/fr/access.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/access.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/access.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/access.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/access.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/access.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/access.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/access.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/picks.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/picks.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/en/picks.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/picks.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/ja/picks.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/picks.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/zh/picks.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/picks.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/zh-tw/picks.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/picks.html"/>
+  </url>
+  <url>
+    <loc>https://stayeego.com/fr/picks.html</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://stayeego.com/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayeego.com/en/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stayeego.com/ja/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://stayeego.com/zh/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://stayeego.com/zh-tw/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://stayeego.com/fr/picks.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stayeego.com/en/picks.html"/>
+  </url>
 </urlset>

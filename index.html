@@ -347,9 +347,22 @@ p { text-wrap: pretty; }
 .site-head.solid { background: rgba(247, 245, 240, .96); color: var(--ink); box-shadow: 0 1px 0 var(--line); }
 .head-in { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; }
 .wordmark { font-family: var(--wordmark); font-weight: 500; font-size: 22px; letter-spacing: 0.01em; text-decoration: none; white-space: nowrap; }
+/* phones: the menu opens as a sheet under the bar */
 .nav { display: none; }
-.head-right { display: flex; align-items: center; gap: 14px; }
+.site-head.open { background: var(--bg); color: var(--ink); box-shadow: 0 1px 0 var(--line); }
+.site-head.open .nav { position: fixed; inset: 64px 0 auto 0; display: flex; flex-direction: column; padding: 6px 22px 22px; background: var(--bg); box-shadow: 0 14px 24px rgba(27, 29, 26, .12); max-height: calc(100dvh - 64px); overflow-y: auto; }
+.site-head.open .nav a { padding: 15px 2px; border-bottom: 1px solid var(--line); font-family: var(--display); font-weight: var(--display-weight); font-size: 20px; text-decoration: none; }
+.site-head.open .nav a.nav-insta { border-bottom: 0; font-family: var(--text); font-weight: 500; font-size: 15px; color: var(--muted); }
+.nav a[aria-current="page"] { color: var(--wood); }
+.menu-btn { display: grid; place-items: center; width: 44px; height: 44px; margin-right: -8px; padding: 0; border: 0; border-radius: 50%; background: transparent; cursor: pointer; }
+.menu-btn svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; }
+.menu-btn path { transition: transform .2s ease, opacity .2s ease; transform-origin: 12px 12px; }
+.site-head.open .m1 { transform: translateY(5px) rotate(45deg); }
+.site-head.open .m2 { opacity: 0; }
+.site-head.open .m3 { transform: translateY(-5px) rotate(-45deg); }
+.head-right { display: flex; align-items: center; gap: 10px; }
 .head-right .btn { display: none; }
+.head-right .insta { display: none; }
 .insta { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; transition: background-color .15s ease; }
 .insta:hover { background: rgba(127, 127, 127, .18); }
 .insta svg { width: 30px; height: 30px; fill: none; stroke: currentColor; stroke-width: 1.6; }
@@ -419,6 +432,8 @@ p { text-wrap: pretty; }
 .featured-quote { font-family: var(--display); font-size: 18px; line-height: 1.7; }
 .featured-by { margin-top: 10px; font-size: 14.5px; color: var(--muted); }
 .featured p + p { margin-top: 10px; }
+.more { margin-top: 30px; }
+.rv-links { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; }
 .sub-head { margin-top: 44px; font-size: 20px; }
 .sub-head + p { margin-top: 6px; color: var(--muted); font-size: 15.5px; }
 
@@ -609,10 +624,10 @@ p { text-wrap: pretty; }
   .head-in { height: 76px; }
   .lang-hint { top: 94px; right: 32px; }
   .wordmark { font-size: 25px; }
-  .nav { display: flex; gap: 30px; font-size: 15.5px; }
-  .nav a { text-decoration: none; opacity: .9; }
-  .nav a:hover { opacity: 1; text-decoration: underline; text-underline-offset: 6px; }
+  .site-head.open .nav { inset: 76px 0 auto 0; padding-inline: max(22px, calc((100% - 1120px) / 2)); }
+  .head-right { gap: 14px; }
   .head-right .btn { display: inline-flex; }
+  .head-right .insta { display: grid; }
   html { scroll-padding-top: 92px; }
   .hero { min-height: min(94svh, 880px); }
   .slide img { object-position: 50% 58%; }
@@ -649,19 +664,112 @@ p { text-wrap: pretty; }
   .foot { grid-template-columns: 1fr auto; align-items: end; }
   .viewer-stage { padding: 0 72px; }
 }
+/* ---------- other pages: story, the stay, reviews, getting here, local picks ---------- */
+main.sub { padding-top: 64px; }
+.page-head { padding: 52px 0 6px; }
+.eyebrow { font-size: 14px; font-weight: 600; letter-spacing: .06em; color: var(--wood); }
+:root:lang(en) .eyebrow, :root:lang(fr) .eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: 12.5px; }
+.page-head h1 { margin-top: 10px; font-size: clamp(33px, 8.8vw, 58px); }
+.page-head .lead { margin-top: 18px; max-width: var(--measure); font-size: 17px; color: var(--muted); }
+.page-head .sign { margin-top: 14px; }
+.sub .band h1 { font-size: clamp(30px, 7.4vw, 46px); }
+.page-head + .band, .page-head + .pk-filter + .band { padding-top: 44px; }
+.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+.jump a, .pk-chips button, .rv-sort button { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 16px; border: 1px solid var(--line); border-radius: 999px; background: transparent; font-size: 14.5px; font-weight: 600; letter-spacing: 0; text-decoration: none; cursor: pointer; }
+.jump a:hover, .pk-chips button:hover, .rv-sort button:hover { border-color: var(--ink); }
+.pk-chips button[aria-pressed="true"], .rv-sort button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--white); }
+.pk-chips .num { font-weight: 500; opacity: .62; font-size: 13px; }
+
+/* story */
+.photo-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.photo-row img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 3px; }
+.notes { margin-top: 28px; display: grid; gap: 14px; max-width: 46em; }
+.note-card a { display: grid; gap: 6px; padding: 24px 24px 22px; border: 1px solid var(--line); border-radius: 4px; text-decoration: none; transition: border-color .15s ease; }
+.note-card a:hover { border-color: var(--ink); }
+.note-kind { font-size: 13.5px; font-weight: 600; color: var(--wood); }
+.note-card b { font-family: var(--display); font-weight: var(--display-weight); font-size: 21px; line-height: 1.4; }
+.note-sum { color: var(--muted); font-size: 15.5px; }
+.note-go { margin-top: 6px; font-size: 15px; font-weight: 600; color: var(--wood); }
+.note-go::after { content: " →"; }
+
+/* reviews */
+.rv-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 20px; margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--line); }
+.rv-count { font-size: 15px; color: var(--muted); }
+.rv-count b { color: var(--ink); }
+.rv-sort { display: flex; flex-wrap: wrap; gap: 8px; }
+.rv-all { max-width: 46em; }
+.rv-all .rv:first-child { padding-top: 0; }
+.rv-all .rv[hidden] { display: none; }
+/* hundreds of reviews in six languages: set in the reader's own system fonts so the site's font files stay small */
+.rv-all .orig, .rv-all .tr { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", "Hiragino Sans", "PingFang SC", "Microsoft YaHei", sans-serif; font-weight: 400; font-size: 16.5px; line-height: 1.75; letter-spacing: 0; }
+.rv-all .orig { color: var(--ink); }
+.rv-all :lang(ja) { font-family: -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif; line-break: strict; }
+.rv-all :lang(zh-Hant) { font-family: -apple-system, "PingFang TC", "Microsoft JhengHei", sans-serif; }
+.rv-all :lang(zh-Hans), .rv-all :lang(zh) { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+.rv-all :lang(ko) { word-break: keep-all; }
+.rv .grid.rv-photos { grid-template-columns: repeat(4, 1fr); max-width: 520px; margin-top: 18px; gap: 6px; }
+.rv-more { margin-top: 34px; }
+.rv-foot { margin-top: 34px; }
+
+/* local picks */
+.pk-filter { position: sticky; top: 64px; z-index: 5; background: rgba(247, 245, 240, .96); border-bottom: 1px solid var(--line); margin-top: 30px; }
+.pk-chips { display: flex; gap: 8px; overflow-x: auto; padding: 12px 0; scrollbar-width: none; }
+.pk-chips::-webkit-scrollbar { display: none; }
+.pk-chips button { flex: none; }
+.pk-sec[hidden] { display: none; }
+.pk-sec + .pk-sec { padding-top: 0; }
+.pk-list { display: grid; gap: 0; margin-top: 18px; border-top: 1px solid var(--line); }
+.pk-card { padding: 28px 0 30px; border-bottom: 1px solid var(--line); }
+.pk-tag { font-size: 13.5px; color: var(--muted); }
+.pk-no { font-family: var(--wordmark); color: var(--wood); margin-right: 4px; }
+.pk-card h3 { margin-top: 8px; font-size: 24px; }
+.pk-card h3 [lang="ko"] { font-family: "Maru Buri", "Noto Serif KR", serif; }
+.pk-alt { display: block; margin-top: 2px; font-family: var(--text); font-weight: 500; font-size: 15px; letter-spacing: 0; color: var(--muted); }
+.pk-alt:empty { display: none; }
+.pk-hours { margin-top: 10px; font-size: 13.5px; color: var(--wood); letter-spacing: .02em; }
+.pk-desc { margin-top: 14px; max-width: 40em; }
+.pk-desc p + p { margin-top: 10px; }
+.pk-desc em { font-style: normal; font-weight: 600; background: linear-gradient(transparent 62%, rgba(224, 129, 43, .22) 62%); }
+.pk-map { margin-top: 16px; font-size: 15px; }
+.pk-map a::after { content: " →"; }
+.pk-close .lead { margin-top: 16px; max-width: var(--measure); color: var(--muted); }
+
+@media (min-width: 860px) {
+  main.sub { padding-top: 76px; }
+  .page-head { padding: 92px 0 10px; }
+  .page-head .lead { font-size: 18.5px; }
+  .page-head + .band, .page-head + .pk-filter + .band { padding-top: 64px; }
+  .photo-row { grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .pk-filter { top: 76px; }
+  .pk-list { grid-template-columns: 1fr 1fr; column-gap: 72px; border-top: 0; }
+  .pk-card { border-top: 1px solid var(--line); border-bottom: 0; }
+  .rv-bar { margin-top: 40px; }
+}
+
+/* the full menu fits in the bar from here; below it the menu button opens the sheet */
+@media (min-width: 1140px) {
+  .nav, .site-head.open .nav { position: static; display: flex; flex-direction: row; gap: 26px; padding: 0; background: none; box-shadow: none; overflow: visible; max-height: none; font-size: 15.5px; }
+  .nav a, .site-head.open .nav a { padding: 0; border: 0; font-family: var(--text); font-weight: 400; font-size: 15.5px; text-decoration: none; opacity: .9; white-space: nowrap; }
+  .nav a:hover { opacity: 1; text-decoration: underline; text-underline-offset: 6px; }
+  .nav a[aria-current="page"] { opacity: 1; text-decoration: underline; text-underline-offset: 6px; color: inherit; }
+  .nav .nav-insta, .site-head.open .nav .nav-insta { display: none; }
+  .menu-btn { display: none; }
+  .site-head.open:not(.solid) { background: transparent; color: var(--white); box-shadow: none; }
+}
 </style>
 </head>
 <body>
 
 <header class="site-head" id="head">
   <div class="wrap head-in">
-    <a class="wordmark" href="#top" aria-label="Stay Eego">Stay Eego</a>
-    <nav class="nav" aria-label="페이지 안에서 이동" data-i18n-aria="navLabel">
-      <a href="#story" data-i18n="navStory">이야기</a>
-      <a href="#rooms" data-i18n="navRooms">객실</a>
-      <a href="#breakfast" data-i18n="navBreakfast">아침 식사</a>
-      <a href="#reviews" data-i18n="navReviews">후기</a>
-      <a href="#access" data-i18n="navAccess">오시는 길</a>
+    <a class="wordmark" href="./" aria-label="Stay Eego">Stay Eego</a>
+    <nav class="nav" id="siteNav" aria-label="사이트 메뉴" data-i18n-aria="navLabel">
+      <a href="story.html" data-nav="story" data-i18n="navStory">이야기</a>
+      <a href="house.html" data-nav="house" data-i18n="navHouse">숙소 안내</a>
+      <a href="reviews.html" data-nav="reviews" data-i18n="navReviews">후기</a>
+      <a href="access.html" data-nav="access" data-i18n="navAccess">오시는 길</a>
+      <a href="picks.html" data-nav="picks" data-i18n="navPicks">단골집</a>
+      <a class="nav-insta" href="https://www.instagram.com/stay.eego/" target="_blank" rel="noopener" data-i18n="footInsta">인스타그램 @stay.eego</a>
     </nav>
     <div class="head-right">
       <label class="lang">
@@ -677,6 +785,7 @@ p { text-wrap: pretty; }
       </label>
       <a class="insta" href="https://www.instagram.com/stay.eego/" target="_blank" rel="noopener" aria-label="인스타그램 @stay.eego" data-i18n-aria="instaLabel"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none"/></svg></a>
       <a class="btn small" href="book.html" data-i18n="book">날짜 확인하기</a>
+      <button type="button" class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav" aria-label="메뉴 열기" data-i18n-aria="menuOpen"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="m1" d="M4 7h16"/><path class="m2" d="M4 12h16"/><path class="m3" d="M4 17h16"/></svg></button>
     </div>
   </div>
 </header>
@@ -748,11 +857,12 @@ p { text-wrap: pretty; }
           <p data-i18n="story3">저희는 2층에 살아요. 필요하실 땐 가까이 있고, 쉬실 땐 조용히 있을게요.</p>
         </div>
         <p class="sign" data-i18n="storySign">네네 &amp; 민호</p>
-        <div class="featured">
+        <div class="featured" data-only="home">
           <p class="featured-quote" data-i18n="featQuote">“제가 40년을 나고 자란 이 동네의 분위기까지 지킬 거예요. 앞으로도 계속 여기서 뿌리내리고 싶거든요.”</p>
           <p class="featured-by" data-i18n="featBy">에어비앤비 캠페인 ‘여행은 함께 살아가는 거야’에 호스트 이야기로 소개되었습니다.</p>
           <p><a class="text-link" href="https://www.airbnb.co.kr/e/ppap_travelislivingtogether_host1" target="_blank" rel="noopener" data-i18n="featLink">에어비앤비가 쓴 스테이 이고 이야기 읽기</a></p>
         </div>
+        <p class="more" data-only="home"><a class="btn line" href="story.html" data-i18n="storyMore">이야기 더 보기</a></p>
       </div>
     </div>
   </section>
@@ -1010,7 +1120,7 @@ p { text-wrap: pretty; }
         <div class="copy">
           <p data-i18n="town1">수원화성 성곽길도, 수십 년 된 노포도, 골목 안 카페도 집에서 걸어서 갈 수 있습니다.</p>
           <p data-i18n="town2">도착하시면 어떤 것을 좋아하시는지 먼저 여쭙니다. 그 이야기를 듣고 그날 가시기 좋은 곳을 골라 드립니다. 저희가 직접 다니는 단골집 29곳은 지도와 함께 정리해 두었습니다.</p>
-          <p><a class="text-link" href="https://vorovong.github.io/stay-eego-site/" target="_blank" rel="noopener" data-i18n="townLink">네네가 추천하는 행궁동 단골집</a></p>
+          <p><a class="text-link" href="picks.html" data-i18n="townLink">네네가 추천하는 행궁동 단골집</a></p>
         </div>
         <blockquote class="said" data-orig="fr">
           <p class="orig" lang="fr">Mon conseil : inclure Suwon dans votre voyage en Corée et d’y passer au moins 2 nuits pour avoir le temps de bien visiter.</p>
@@ -1028,7 +1138,7 @@ p { text-wrap: pretty; }
           <h2 data-i18n="rvTitle">게스트들이 남긴 말</h2>
           <p class="rv-score"><b data-i18n="rvNum">4.99</b><span data-i18n="rvScore">에어비앤비 평점은 정원 4.99, 골목길 4.98이며 후기는 모두 388개입니다.</span></p>
         </div>
-        <p><a class="text-link" href="https://www.airbnb.co.kr/rooms/8525016/reviews" target="_blank" rel="noopener" data-book="reviews" data-i18n="rvAll">에어비앤비에서 후기 모두 보기</a></p>
+        <p class="rv-links"><a class="btn line" href="reviews.html" data-only="home" data-i18n="rvMore">후기 모두 읽기</a> <a class="text-link" href="https://www.airbnb.co.kr/rooms/8525016/reviews" target="_blank" rel="noopener" data-book="reviews" data-i18n="rvAll">에어비앤비에서 후기 모두 보기</a></p>
       </div>
       <div class="rv-list">
         <article class="rv" data-orig="ja">
@@ -1171,7 +1281,7 @@ p { text-wrap: pretty; }
       </div>
       <p class="foot-links">
         <a href="https://www.instagram.com/stay.eego/" target="_blank" rel="noopener" data-i18n="footInsta">인스타그램 @stay.eego</a>
-        <a href="https://vorovong.github.io/stay-eego-site/" target="_blank" rel="noopener" data-i18n="footGuide">네네가 추천하는 행궁동 단골집</a>
+        <a href="picks.html" data-i18n="footGuide">네네가 추천하는 행궁동 단골집</a>
       </p>
       <!-- Plain links to each language's address, for visitors without the menu and for crawlers. The build points them one level up on the language pages. -->
       <nav class="foot-langs" aria-label="Languages">
@@ -1225,7 +1335,9 @@ const COPY = {
     slideLabel: '사진 {i}',
     set_garden: '정원 객실', set_alley: '골목길 객실', set_lobby: '1층 로비',
     set_breakfast: '아침 식사', 'set_breakfast-guest': '게스트가 찍은 아침', set_cats: '게스트가 찍은 고양이',
-    set_photo: '사진'
+    set_photo: '사진', set_review: '게스트 사진',
+    menuOpen: '메뉴 열기', menuClose: '메뉴 닫기',
+    rvShowMore: '후기 {n}개 더 보기'
   },
   en: {}, ja: {}, zh: {}, 'zh-tw': {}, fr: {}
 };
@@ -1274,21 +1386,40 @@ function langUrl(next) {
   const keep = new URLSearchParams(location.search);
   keep.delete('lang'); keep.delete('v');
   const query = keep.toString();
-  return (dir || './') + (PAGE === 'book' ? 'book.html' : '') + (query ? '?' + query : '') + location.hash;
+  return (dir || './') + (PAGE === 'index' ? '' : PAGE + '.html') + (query ? '?' + query : '') + location.hash;
 }
 langSelect.addEventListener('change', () => { location.href = langUrl(langSelect.value); });
 
-/* ---------- header and booking bar ---------- */
+/* ---------- header, menu and booking bar ---------- */
 const head = document.getElementById('head');
-new IntersectionObserver(([entry]) => {
-  head.classList.toggle('solid', !entry.isIntersecting);
-  document.querySelector('.bookbar').classList.toggle('show', !entry.isIntersecting);
-}, { rootMargin: '-80px 0px 0px 0px' }).observe(document.getElementById('hero'));
+const heroEl = document.getElementById('hero');
+const bookbar = document.querySelector('.bookbar');
+if (heroEl) {
+  new IntersectionObserver(([entry]) => {
+    head.classList.toggle('solid', !entry.isIntersecting);
+    bookbar.classList.toggle('show', !entry.isIntersecting);
+  }, { rootMargin: '-80px 0px 0px 0px' }).observe(heroEl);
+} else {
+  // other pages have no photo under the bar: it starts solid, the booking bar comes up once the reader scrolls
+  head.classList.add('solid');
+  const onScroll = () => bookbar.classList.toggle('show', scrollY > 240);
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+}
+document.querySelectorAll('[data-nav]').forEach(a => { if (a.dataset.nav === PAGE) a.setAttribute('aria-current', 'page'); });
+const menuBtn = document.getElementById('menuBtn');
+function setMenu(open) {
+  head.classList.toggle('open', open);
+  menuBtn.setAttribute('aria-expanded', String(open));
+  menuBtn.setAttribute('aria-label', t(open ? 'menuClose' : 'menuOpen'));
+}
+menuBtn.addEventListener('click', () => setMenu(!head.classList.contains('open')));
+document.getElementById('siteNav').addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
+addEventListener('keydown', e => { if (e.key === 'Escape' && head.classList.contains('open')) { setMenu(false); menuBtn.focus(); } });
 
 /* ---------- hero slideshow ---------- */
 const slides = [...document.querySelectorAll('.slide')];
 const heroLines = [...document.querySelectorAll('.hero-line')];
-const dots = document.getElementById('dots');
+const dots = document.getElementById('dots') || document.createElement('div');
 let current = 0, timer = null;
 function show(i) {
   current = (i + slides.length) % slides.length;
@@ -1311,7 +1442,7 @@ slides.forEach((s, n) => {
   b.addEventListener('click', () => { show(n); play(); });
   dots.append(b);
 });
-show(0);
+if (slides.length) show(0);
 // The first slide is in the HTML; the rest are fetched once the page has loaded.
 function startSlides() {
   slides.slice(1).forEach(s => {
@@ -1320,10 +1451,10 @@ function startSlides() {
     s.prepend(source);
     s.querySelector('img').src = `img/hero/s${n}-tall.jpg`;
   });
-  play();
+  if (slides.length) play();
 }
 if (document.readyState === 'complete') startSlides(); else addEventListener('load', startSlides);
-document.addEventListener('visibilitychange', () => document.hidden ? stop() : play());
+document.addEventListener('visibilitychange', () => document.hidden ? stop() : (slides.length && play()));
 
 /* ---------- galleries and the photo viewer ---------- */
 const SETS = window.STAY_GALLERY || {};
@@ -1353,18 +1484,19 @@ function renderGrid(el) {
     el.append(b);
   });
 }
+const setLabel = name => t('set_' + (name.startsWith('rv-') ? 'review' : name));
 function labelGalleries() {
   document.querySelectorAll('[data-count]').forEach(el => { el.textContent = t('photosCount', { n: (SETS[el.dataset.count] || []).length }); });
   document.querySelectorAll('.grid button, .shot').forEach(b => {
     const n = (SETS[b.dataset.open] || []).length;
-    b.querySelector('img').alt = t('photoOf', { label: t('set_' + b.dataset.open), i: +b.dataset.at + 1, n });
+    b.querySelector('img').alt = t('photoOf', { label: setLabel(b.dataset.open), i: +b.dataset.at + 1, n });
   });
   [...dots.children].forEach((d, n) => d.setAttribute('aria-label', t('slideLabel', { i: n + 1 })));
 }
 function paint() {
   const items = SETS[openSet], item = items[openAt];
   viewerImg.src = 'img/' + item.f;
-  viewerImg.alt = t('photoOf', { label: t('set_' + openSet), i: openAt + 1, n: items.length });
+  viewerImg.alt = t('photoOf', { label: setLabel(openSet), i: openAt + 1, n: items.length });
   viewerCount.textContent = viewerImg.alt;
   const next = items[(openAt + 1) % items.length];
   new Image().src = 'img/' + next.f;        // warm the next photo
@@ -1407,8 +1539,8 @@ document.querySelectorAll('.reel-nav').forEach(nav => {
 });
 const gmap = document.getElementById('gmap');
 const GMAP_LANG = { ko: 'ko', en: 'en', ja: 'ja', zh: 'zh-CN', 'zh-tw': 'zh-TW', fr: 'fr' };
-function loadMap() { if (gmap.dataset.on) gmap.src = gmap.dataset.src + '&hl=' + (GMAP_LANG[lang] || 'en'); }
-new IntersectionObserver((entries, io) => {
+function loadMap() { if (gmap && gmap.dataset.on) gmap.src = gmap.dataset.src + '&hl=' + (GMAP_LANG[lang] || 'en'); }
+if (gmap) new IntersectionObserver((entries, io) => {
   if (!entries[0].isIntersecting) return;
   gmap.dataset.on = '1'; loadMap(); io.disconnect();
 }, { rootMargin: '600px 0px' }).observe(gmap);
@@ -1421,6 +1553,40 @@ function fillDates() {
 }
 fillDates();
 
+/* ---------- review page: order, photos only, and a few at a time ---------- */
+const rvAll = document.getElementById('rvAll');
+if (rvAll) {
+  const items = [...rvAll.querySelectorAll('.rv')];
+  const STEP = 30;
+  let showing = STEP, mode = 'long';
+  const more = Object.assign(document.createElement('button'), { type: 'button', className: 'btn line rv-more' });
+  rvAll.after(more);
+  const order = { long: (a, b) => b.dataset.len - a.dataset.len, new: (a, b) => b.dataset.date.localeCompare(a.dataset.date) || b.dataset.len - a.dataset.len,
+                  photo: (a, b) => b.dataset.len - a.dataset.len };
+  function drawReviews() {
+    const list = items.filter(el => mode !== 'photo' || +el.dataset.photos > 0).sort(order[mode]);
+    items.forEach(el => { el.hidden = true; });
+    list.forEach((el, n) => { rvAll.append(el); el.hidden = n >= showing; });
+    more.hidden = list.length <= showing;
+    more.textContent = t('rvShowMore', { n: Math.min(STEP, list.length - showing) });
+  }
+  document.querySelectorAll('[data-sort]').forEach(btn => btn.addEventListener('click', () => {
+    document.querySelectorAll('[data-sort]').forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
+    mode = btn.dataset.sort; showing = STEP; drawReviews();
+  }));
+  more.addEventListener('click', () => { showing += STEP; drawReviews(); });
+  drawReviews();
+}
+
+/* ---------- local picks: show one kind ---------- */
+const chips = [...document.querySelectorAll('[data-filter]')];
+chips.forEach(chip => chip.addEventListener('click', () => {
+  chips.forEach(c => c.setAttribute('aria-pressed', String(c === chip)));
+  document.querySelectorAll('.pk-sec').forEach(sec => { sec.hidden = chip.dataset.filter !== 'all' && sec.dataset.cat !== chip.dataset.filter; });
+  const first = document.querySelector('.pk-sec:not([hidden])');
+  if (first && first.getBoundingClientRect().top < 0) first.scrollIntoView({ behavior: 'smooth' });
+}));
+
 // Older links carried ?lang=ja; send them to that language's address.
 const asked = new URLSearchParams(location.search).get('lang');
 if (PAGE_LANG === 'ko' && asked !== 'ko' && LANGS.includes(asked)) location.replace(langUrl(asked));
@@ -1432,7 +1598,7 @@ const HINT = { en: 'Read this page in English', ja: '日本語で読む', zh: '�
 const nav = navigator.language || '';
 const mine = /^zh\b.*(TW|HK|MO|Hant)/i.test(nav) ? 'zh-tw' : nav.slice(0, 2);
 const hint = document.getElementById('langHint');
-if (PAGE_LANG === 'ko' && HINT[mine]) {
+if (PAGE_LANG === 'ko' && HINT[mine] && hint) {
   hint.textContent = HINT[mine]; hint.lang = HTML_LANG[mine] || mine; hint.href = langUrl(mine); hint.hidden = false;
 }
 </script>
