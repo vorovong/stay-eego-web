@@ -14,22 +14,28 @@
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="Disponibilités | Stay Eego (스테이 이고)">
 <meta property="og:description" content="Disponibilités des chambres de Stay Eego. Choisissez vos dates et le nombre de voyageurs, puis réservez sur Airbnb.">
-<meta property="og:image" content="https://vorovong.github.io/stay-eego-web/img/hero/s1-wide.jpg">
+<meta property="og:image" content="https://vorovong.github.io/stay-eego-web/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:url" content="https://vorovong.github.io/stay-eego-web/fr/book.html">
 <meta name="twitter:card" content="summary_large_image">
 <!-- seo:end -->
 <meta name="theme-color" content="#172C20">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F3A2B'/%3E%3Cpath d='M14 36a18 18 0 0 1 36 0z' fill='%23E0812B'/%3E%3Crect x='30' y='36' width='4' height='16' fill='%23F7F5F0'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://hangeul.pstatic.net" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&text=StayEgo%20&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet" data-fonts="fr">
+<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<!-- fonts:start (written by scripts/stay_build_pages.py from stay/fonts; do not edit) -->
+<link rel="preload" as="font" type="font/woff2" href="../fonts/fraunces.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="../fonts/inter.woff2" crossorigin>
 <style>
-@font-face { font-family: "Maru Buri"; font-weight: 400; font-display: swap; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format("woff2"); }
-@font-face { font-family: "Maru Buri"; font-weight: 600; font-display: swap; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2) format("woff2"); }
-
+@font-face { font-family: "Fraunces"; font-weight: 400 600; font-display: swap; src: url(../fonts/fraunces.woff2) format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 400 600; font-display: swap; src: url(../fonts/inter.woff2) format("woff2"); }
+@font-face { font-family: "Shippori Mincho"; font-weight: 500; font-display: swap; src: url(../fonts/quote-ja.woff2) format("woff2"); }
+@font-face { font-family: "Noto Serif SC"; font-weight: 500; font-display: swap; src: url(../fonts/quote-zh-hans.woff2) format("woff2"); }
+@font-face { font-family: "Noto Serif TC"; font-weight: 500; font-display: swap; src: url(../fonts/quote-zh-hant.woff2) format("woff2"); }
+</style>
+<!-- fonts:end -->
+<style>
 :root {
   --green: #1F3A2B;
   --green-deep: #172C20;
@@ -285,19 +291,7 @@ const PAGE_LANG = 'fr';
 const LANGS = ['ko', 'en', 'ja', 'zh', 'fr'];
 const HTML_LANG = { zh: 'zh-CN' };
 const AIRBNB_HOST = { ko: 'www.airbnb.co.kr', en: 'www.airbnb.com', ja: 'www.airbnb.jp', zh: 'zh.airbnb.com', fr: 'www.airbnb.fr' };
-const LANG_FONTS = {
-  en: 'https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500;600&display=swap',
-  ja: 'https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap',
-  zh: 'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600;700&display=swap',
-  fr: 'https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500;600&display=swap'
-};
 const langSelect = document.getElementById('langSelect');
-function loadFonts(next) {
-  if (!LANG_FONTS[next] || document.querySelector('link[data-fonts="' + next + '"]')) return;
-  const link = Object.assign(document.createElement('link'), { rel: 'stylesheet', href: LANG_FONTS[next] });
-  link.dataset.fonts = next;
-  document.head.append(link);
-}
 const ROOM_PATH = { garden: 'rooms/8525016', alley: 'rooms/1070715217838494598' };
 
 const pick = attr => [...document.querySelectorAll('[' + attr + ']')];
@@ -311,7 +305,6 @@ let lang = PAGE_LANG;
 const t = (key, vars = {}) => (COPY[lang][key] ?? COPY.ko[key] ?? '').replace(/\{(\w+)\}/g, (_, k) => vars[k]);
 // The built pages already carry their language in the HTML; this sets what the script draws.
 function applyLang() {
-  loadFonts(lang);
   textNodes.forEach(el => { el.innerHTML = t(el.dataset.i18n); });
   ariaNodes.forEach(el => { el.setAttribute('aria-label', t(el.dataset.i18nAria)); });
   document.title = t('pageTitle');

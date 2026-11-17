@@ -19,7 +19,10 @@
 <meta property="og:locale" content="ko_KR">
 <meta property="og:title" content="Stay Eego 스테이 이고 | 수원 행궁동, 부부가 사는 집에서 하룻밤">
 <meta property="og:description" content="수원화성 곁, 60년 넘은 집에 객실 두 개. 아침은 호스트 부부가 손수 차립니다. 서울에서 한 시간.">
-<meta property="og:image" content="https://vorovong.github.io/stay-eego-web/img/hero/s1-wide.jpg">
+<meta property="og:image" content="https://vorovong.github.io/stay-eego-web/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="단풍나무와 돌길이 있는 마당, 그 뒤의 하얀 집">
 <meta property="og:url" content="https://vorovong.github.io/stay-eego-web/">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
@@ -31,7 +34,7 @@
  "alternateName": "스테이 이고",
  "description": "수원화성 곁, 60년 넘은 집에 객실 두 개. 아침은 호스트 부부가 손수 차립니다. 서울에서 한 시간.",
  "image": [
-  "https://vorovong.github.io/stay-eego-web/img/hero/s1-wide.jpg",
+  "https://vorovong.github.io/stay-eego-web/img/og.jpg",
   "https://vorovong.github.io/stay-eego-web/img/hero/s3-wide.jpg",
   "https://vorovong.github.io/stay-eego-web/img/hero/s4-wide.jpg"
  ],
@@ -83,7 +86,53 @@
   "https://www.airbnb.com/rooms/8525016",
   "https://www.airbnb.com/rooms/1070715217838494598"
  ],
- "url": "https://vorovong.github.io/stay-eego-web/"
+ "url": "https://vorovong.github.io/stay-eego-web/",
+ "containsPlace": [
+  {
+   "@type": "HotelRoom",
+   "name": "골목길",
+   "description": "행궁동 골목을 향해 창이 난 객실입니다. 창밖으로 이웃집 장독대와 기와지붕이 보여, 동네의 하루를 방 안에서 바라볼 수 있습니다.",
+   "occupancy": {
+    "@type": "QuantitativeValue",
+    "maxValue": 2,
+    "unitText": "guests"
+   },
+   "bed": {
+    "@type": "BedDetails",
+    "typeOfBed": "Queen",
+    "numberOfBeds": 1
+   },
+   "sameAs": "https://www.airbnb.com/rooms/1070715217838494598",
+   "url": "https://vorovong.github.io/stay-eego-web/book.html?room=alley"
+  },
+  {
+   "@type": "HotelRoom",
+   "name": "정원",
+   "description": "마당을 향해 큰 창이 난 객실입니다. 침대에 누우면 창 가득 나무와 하늘이 들어오고, 낮에는 볕이 잘 듭니다.",
+   "occupancy": {
+    "@type": "QuantitativeValue",
+    "maxValue": 2,
+    "unitText": "guests"
+   },
+   "bed": {
+    "@type": "BedDetails",
+    "typeOfBed": "Queen",
+    "numberOfBeds": 1
+   },
+   "sameAs": "https://www.airbnb.com/rooms/8525016",
+   "url": "https://vorovong.github.io/stay-eego-web/book.html?room=garden"
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "Stay Eego",
+ "alternateName": "스테이 이고",
+ "url": "https://vorovong.github.io/stay-eego-web/",
+ "inLanguage": "ko"
 }
 </script>
 <script type="application/ld+json">
@@ -137,21 +186,25 @@
 </script>
 <!-- seo:end -->
 <meta name="theme-color" content="#1F3A2B">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F3A2B'/%3E%3Cpath d='M14 36a18 18 0 0 1 36 0z' fill='%23E0812B'/%3E%3Crect x='30' y='36' width='4' height='16' fill='%23F7F5F0'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://hangeul.pstatic.net" crossorigin>
-<link rel="preload" as="image" href="img/hero/s1-tall.jpg" media="(max-width: 859px)">
-<link rel="preload" as="image" href="img/hero/s1-wide.jpg" media="(min-width: 860px)">
-<!-- Fraunces: wordmark and Latin guest quotes. Shippori Mincho / Noto Serif TC: guest quotes kept in their original language. -->
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Shippori+Mincho:wght@500;600&family=Noto+Serif+TC:wght@500&family=Noto+Serif+SC:wght@500&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" as="image" href="img/hero/s1-tall.jpg" media="(max-width: 859px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero/s1-wide.jpg" media="(min-width: 860px)" fetchpriority="high">
+<!-- fonts:start (written by scripts/stay_build_pages.py from stay/fonts; do not edit) -->
+<link rel="preload" as="font" type="font/woff2" href="fonts/ko-maruburi-600.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/ko-pretendard.woff2" crossorigin>
 <style>
-/* Korean display face: Maru Buri (Naver), mapped to one family with real weights */
-@font-face { font-family: "Maru Buri"; font-weight: 400; font-display: swap; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format("woff2"); }
-@font-face { font-family: "Maru Buri"; font-weight: 600; font-display: swap; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2) format("woff2"); }
-@font-face { font-family: "Maru Buri"; font-weight: 700; font-display: swap; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2) format("woff2"); }
-
+@font-face { font-family: "Maru Buri"; font-weight: 600; font-display: swap; src: url(fonts/ko-maruburi-600.woff2) format("woff2"); }
+@font-face { font-family: "Pretendard Variable"; font-weight: 400 700; font-display: swap; src: url(fonts/ko-pretendard.woff2) format("woff2"); }
+@font-face { font-family: "Maru Buri"; font-weight: 400; font-display: swap; src: url(fonts/ko-maruburi-400.woff2) format("woff2"); }
+@font-face { font-family: "Fraunces"; font-weight: 400 600; font-display: swap; src: url(fonts/fraunces.woff2) format("woff2"); }
+@font-face { font-family: "Shippori Mincho"; font-weight: 500; font-display: swap; src: url(fonts/quote-ja.woff2) format("woff2"); }
+@font-face { font-family: "Noto Serif SC"; font-weight: 500; font-display: swap; src: url(fonts/quote-zh-hans.woff2) format("woff2"); }
+@font-face { font-family: "Noto Serif TC"; font-weight: 500; font-display: swap; src: url(fonts/quote-zh-hant.woff2) format("woff2"); }
+</style>
+<!-- fonts:end -->
+<style>
 :root {
   --green: #1F3A2B;       /* the wall colour of both rooms */
   --green-deep: #172C20;
@@ -464,7 +517,7 @@ p { text-wrap: pretty; }
 /* ---------- getting here: schematic map and the real one ---------- */
 .maps { display: grid; gap: 28px; margin-top: 30px; }
 .mapcard figcaption { margin-top: 10px; font-size: 14px; color: var(--muted); }
-.map-credit { display: block; margin-top: 2px; font-size: 12px; opacity: .8; }
+.map-credit { display: block; margin-top: 2px; font-size: 12px; }
 /* waymap:start */
 .waymap { display: block; width: 100%; height: auto; background: #D2DFDA; border-radius: 4px; }
 .map-route { fill: none; stroke: var(--green); stroke-width: 1.8; stroke-linecap: round; }
@@ -494,6 +547,8 @@ p { text-wrap: pretty; }
 .foot { margin-top: 72px; padding-top: 26px; border-top: 1px solid rgba(255, 255, 255, .18); display: grid; gap: 10px; font-size: 14px; color: rgba(255, 255, 255, .66); }
 .foot .wordmark { color: var(--white); font-size: 20px; }
 .foot-links { display: grid; gap: 8px; }
+.foot-langs { display: flex; flex-wrap: wrap; gap: 6px 20px; grid-column: 1 / -1; padding-top: 6px; }
+.foot-langs a[aria-current] { color: var(--white); text-decoration: none; }
 
 /* ---------- booking bar (phones) ---------- */
 .bookbar {
@@ -1111,6 +1166,14 @@ p { text-wrap: pretty; }
         <a href="https://www.instagram.com/stay.eego/" target="_blank" rel="noopener" data-i18n="footInsta">인스타그램 @stay.eego</a>
         <a href="https://vorovong.github.io/stay-eego-site/" target="_blank" rel="noopener" data-i18n="footGuide">네네가 추천하는 행궁동 단골집</a>
       </p>
+      <!-- Plain links to each language's address, for visitors without the menu and for crawlers. The build points them one level up on the language pages. -->
+      <nav class="foot-langs" aria-label="Languages">
+        <a href="./" hreflang="ko" lang="ko" data-langlink="ko" aria-current="page">한국어</a>
+        <a href="en/" hreflang="en" lang="en" data-langlink="en">English</a>
+        <a href="ja/" hreflang="ja" lang="ja" data-langlink="ja">日本語</a>
+        <a href="zh/" hreflang="zh-Hans" lang="zh-Hans" data-langlink="zh">简体中文</a>
+        <a href="fr/" hreflang="fr" lang="fr" data-langlink="fr">Français</a>
+      </nav>
     </div>
   </div>
 </footer>
@@ -1165,19 +1228,7 @@ const PAGE_LANG = 'ko';
 const LANGS = ['ko', 'en', 'ja', 'zh', 'fr'];
 const HTML_LANG = { zh: 'zh-CN' };
 const AIRBNB_HOST = { ko: 'www.airbnb.co.kr', en: 'www.airbnb.com', ja: 'www.airbnb.jp', zh: 'zh.airbnb.com', fr: 'www.airbnb.fr' };
-const LANG_FONTS = {
-  en: 'https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500;600&display=swap',
-  ja: 'https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&display=swap',
-  zh: 'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@500;600;700&display=swap',
-  fr: 'https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500;600&display=swap'
-};
 const langSelect = document.getElementById('langSelect');
-function loadFonts(next) {
-  if (!LANG_FONTS[next] || document.querySelector('link[data-fonts="' + next + '"]')) return;
-  const link = Object.assign(document.createElement('link'), { rel: 'stylesheet', href: LANG_FONTS[next] });
-  link.dataset.fonts = next;
-  document.head.append(link);
-}
 
 const pick = attr => [...document.querySelectorAll('[' + attr + ']')];
 const textNodes = pick('data-i18n'), altNodes = pick('data-i18n-alt'), ariaNodes = pick('data-i18n-aria'), titleNodes = pick('data-i18n-title');
@@ -1193,7 +1244,6 @@ const t = (key, vars = {}) => (COPY[lang][key] ?? COPY.ko[key] ?? '').replace(/\
 
 // The built pages already carry their language in the HTML; this sets what the script draws.
 function applyLang() {
-  loadFonts(lang);
   textNodes.forEach(el => { el.innerHTML = t(el.dataset.i18n); });
   altNodes.forEach(el => { el.alt = t(el.dataset.i18nAlt); });
   ariaNodes.forEach(el => { el.setAttribute('aria-label', t(el.dataset.i18nAria)); });
