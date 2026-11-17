@@ -71,6 +71,12 @@
   --track-display: 0.04em;
   --display-weight: 600;
 }
+
+/* Traditional Chinese (zh-Hant): the :lang(zh) rules above apply too; only the faces differ */
+:root:lang(zh-Hant) {
+  --display: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  --text: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+}
 :root:lang(fr) {
   --display: "Fraunces", Georgia, serif;
   --text: "Inter", "Helvetica Neue", Arial, sans-serif;
@@ -200,6 +206,7 @@ button.day { cursor: pointer; }
           <option value="en">English</option>
           <option value="ja">日本語</option>
           <option value="zh">简体中文</option>
+          <option value="zh-tw">繁體中文</option>
           <option value="fr" selected>Français</option>
         </select>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
@@ -282,15 +289,15 @@ const COPY = {
     pickBlocked: '그 사이에 예약이 마감된 날이 있어 그렇게는 선택할 수 없습니다.',
     pickFull: '예약이 마감된 날짜입니다.'
   },
-  en: {}, ja: {}, zh: {}, fr: {"back": "Retour aux chambres", "title": "Disponibilités", "lead": "Choisissez la chambre, le nombre de voyageurs et vos dates, puis cliquez sur « Réserver sur Airbnb » : la page de réservation Airbnb s’ouvre avec votre sélection. Le paiement se fait sur Airbnb.", "roomLabel": "Chambre", "alley": "Ruelle", "garden": "Jardin", "guestLabel": "Voyageurs", "guest1": "1 personne", "guest2": "2 personnes", "free": "Disponible", "full": "Complet", "go": "Réserver sur Airbnb", "fallbackSay": "Le calendrier ne peut pas s’afficher pour le moment. Consultez directement les dates sur Airbnb.", "alleyAirbnb": "Chambre Ruelle sur Airbnb", "gardenAirbnb": "Chambre Jardin sur Airbnb", "prev": "Mois précédent", "next": "Mois suivant", "alleySay": "La fenêtre donne sur les jarres et les toits de tuiles du voisinage", "gardenSay": "La fenêtre donne sur les arbres du jardin et le ciel", "updated": "Mis à jour le {when}. Les disponibilités définitives sont confirmées sur Airbnb.", "sample": "Ce calendrier affiche des données d’exemple, pas les disponibilités réelles.", "dayFree": "{date} : disponible", "dayFull": "{date} : complet", "pickNone": "Choisissez votre date d’arrivée.", "pickSummary": "{room} · {guests} · du {in} au {out} · {n} nuits", "pickSummary1": "{room} · {guests} · du {in} au {out} · {n} nuit", "pickOk": "Ces dates sont disponibles.", "pickHint": "Pour rester plus longtemps, choisissez une autre date de départ.", "pickBlocked": "Une date déjà réservée se trouve dans cette période : cette sélection n’est pas possible.", "pickFull": "Cette date est complète.", "pageTitle": "Disponibilités | Stay Eego (스테이 이고)", "metaDescription": "Disponibilités des chambres de Stay Eego. Choisissez vos dates et le nombre de voyageurs, puis réservez sur Airbnb."}
+  en: {}, ja: {}, zh: {}, 'zh-tw': {}, fr: {"back": "Retour aux chambres", "title": "Disponibilités", "lead": "Choisissez la chambre, le nombre de voyageurs et vos dates, puis cliquez sur « Réserver sur Airbnb » : la page de réservation Airbnb s’ouvre avec votre sélection. Le paiement se fait sur Airbnb.", "roomLabel": "Chambre", "alley": "Ruelle", "garden": "Jardin", "guestLabel": "Voyageurs", "guest1": "1 personne", "guest2": "2 personnes", "free": "Disponible", "full": "Complet", "go": "Réserver sur Airbnb", "fallbackSay": "Le calendrier ne peut pas s’afficher pour le moment. Consultez directement les dates sur Airbnb.", "alleyAirbnb": "Chambre Ruelle sur Airbnb", "gardenAirbnb": "Chambre Jardin sur Airbnb", "prev": "Mois précédent", "next": "Mois suivant", "alleySay": "La fenêtre donne sur les jarres et les toits de tuiles du voisinage", "gardenSay": "La fenêtre donne sur les arbres du jardin et le ciel", "updated": "Mis à jour le {when}. Les disponibilités définitives sont confirmées sur Airbnb.", "sample": "Ce calendrier affiche des données d’exemple, pas les disponibilités réelles.", "dayFree": "{date} : disponible", "dayFull": "{date} : complet", "pickNone": "Choisissez votre date d’arrivée.", "pickSummary": "{room} · {guests} · du {in} au {out} · {n} nuits", "pickSummary1": "{room} · {guests} · du {in} au {out} · {n} nuit", "pickOk": "Ces dates sont disponibles.", "pickHint": "Pour rester plus longtemps, choisissez une autre date de départ.", "pickBlocked": "Une date déjà réservée se trouve dans cette période : cette sélection n’est pas possible.", "pickFull": "Cette date est complète.", "pageTitle": "Disponibilités | Stay Eego (스테이 이고)", "metaDescription": "Disponibilités des chambres de Stay Eego. Choisissez vos dates et le nombre de voyageurs, puis réservez sur Airbnb."}
 };
 const PAGE = 'book';
 // One address per language: scripts/stay_build_pages.py writes en/, ja/, zh/ and fr/ from this file,
 // with the copy from i18n/<lang>.json already in the HTML, and sets PAGE_LANG and COPY there.
 const PAGE_LANG = 'fr';
-const LANGS = ['ko', 'en', 'ja', 'zh', 'fr'];
-const HTML_LANG = { zh: 'zh-CN' };
-const AIRBNB_HOST = { ko: 'www.airbnb.co.kr', en: 'www.airbnb.com', ja: 'www.airbnb.jp', zh: 'zh.airbnb.com', fr: 'www.airbnb.fr' };
+const LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'fr'];
+const HTML_LANG = { zh: 'zh-CN', 'zh-tw': 'zh-Hant' };
+const AIRBNB_HOST = { ko: 'www.airbnb.co.kr', en: 'www.airbnb.com', ja: 'www.airbnb.jp', zh: 'zh.airbnb.com', 'zh-tw': 'www.airbnb.com.tw', fr: 'www.airbnb.fr' };
 const langSelect = document.getElementById('langSelect');
 const ROOM_PATH = { garden: 'rooms/8525016', alley: 'rooms/1070715217838494598' };
 

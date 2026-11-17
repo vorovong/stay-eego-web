@@ -71,6 +71,12 @@
   --track-display: 0.04em;
   --display-weight: 600;
 }
+
+/* Traditional Chinese (zh-Hant): the :lang(zh) rules above apply too; only the faces differ */
+:root:lang(zh-Hant) {
+  --display: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  --text: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+}
 :root:lang(fr) {
   --display: "Fraunces", Georgia, serif;
   --text: "Inter", "Helvetica Neue", Arial, sans-serif;
@@ -200,6 +206,7 @@ button.day { cursor: pointer; }
           <option value="en">English</option>
           <option value="ja">日本語</option>
           <option value="zh" selected>简体中文</option>
+          <option value="zh-tw">繁體中文</option>
           <option value="fr">Français</option>
         </select>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
@@ -282,15 +289,15 @@ const COPY = {
     pickBlocked: '그 사이에 예약이 마감된 날이 있어 그렇게는 선택할 수 없습니다.',
     pickFull: '예약이 마감된 날짜입니다.'
   },
-  en: {}, ja: {}, zh: {"back": "返回客房介绍", "title": "可订日期", "lead": "选好客房、人数和日期后，点击“去 Airbnb 预订”，就会跳转到已选好条件的 Airbnb 预订页面。付款在 Airbnb 上完成。", "roomLabel": "客房", "alley": "小巷房", "garden": "庭院房", "guestLabel": "人数", "guest1": "1 人", "guest2": "2 人", "free": "可预订", "full": "已订出", "go": "去 Airbnb 预订", "fallbackSay": "暂时无法加载日历，请直接在 Airbnb 上查看日期。", "alleyAirbnb": "在 Airbnb 查看小巷房", "gardenAirbnb": "在 Airbnb 查看庭院房", "prev": "上个月", "next": "下个月", "alleySay": "窗外可见酱缸台和瓦屋顶的客房", "gardenSay": "窗外可见院中树木和天空的客房", "updated": "以上为 {when} 的数据，最终能否预订以 Airbnb 为准。", "sample": "当前显示的是示例数据，并非实际预订情况。", "dayFree": "{date} 可预订", "dayFull": "{date} 已订出", "pickNone": "请点选入住日期。", "pickSummary": "{room} · {guests} · {in} 入住，{out} 退房 · {n} 晚", "pickOk": "这些日期现在可以预订。", "pickHint": "如需多住几晚，请再点一下退房日期。", "pickBlocked": "所选日期中有已被预订的日子，无法这样选择。", "pickFull": "这一天已被预订。", "pageTitle": "可订日期 | Stay Eego", "metaDescription": "Stay Eego 各客房的可订日期。选好日期和人数后，即可前往 Airbnb 预订。"}, fr: {}
+  en: {}, ja: {}, zh: {"back": "返回客房介绍", "title": "可订日期", "lead": "选好客房、人数和日期后，点击“去 Airbnb 预订”，就会跳转到已选好条件的 Airbnb 预订页面。付款在 Airbnb 上完成。", "roomLabel": "客房", "alley": "小巷房", "garden": "庭院房", "guestLabel": "人数", "guest1": "1 人", "guest2": "2 人", "free": "可预订", "full": "已订出", "go": "去 Airbnb 预订", "fallbackSay": "暂时无法加载日历，请直接在 Airbnb 上查看日期。", "alleyAirbnb": "在 Airbnb 查看小巷房", "gardenAirbnb": "在 Airbnb 查看庭院房", "prev": "上个月", "next": "下个月", "alleySay": "窗外可见酱缸台和瓦屋顶的客房", "gardenSay": "窗外可见院中树木和天空的客房", "updated": "以上为 {when} 的数据，最终能否预订以 Airbnb 为准。", "sample": "当前显示的是示例数据，并非实际预订情况。", "dayFree": "{date} 可预订", "dayFull": "{date} 已订出", "pickNone": "请点选入住日期。", "pickSummary": "{room} · {guests} · {in} 入住，{out} 退房 · {n} 晚", "pickOk": "这些日期现在可以预订。", "pickHint": "如需多住几晚，请再点一下退房日期。", "pickBlocked": "所选日期中有已被预订的日子，无法这样选择。", "pickFull": "这一天已被预订。", "pageTitle": "可订日期 | Stay Eego", "metaDescription": "Stay Eego 各客房的可订日期。选好日期和人数后，即可前往 Airbnb 预订。"}, 'zh-tw': {}, fr: {}
 };
 const PAGE = 'book';
 // One address per language: scripts/stay_build_pages.py writes en/, ja/, zh/ and fr/ from this file,
 // with the copy from i18n/<lang>.json already in the HTML, and sets PAGE_LANG and COPY there.
 const PAGE_LANG = 'zh';
-const LANGS = ['ko', 'en', 'ja', 'zh', 'fr'];
-const HTML_LANG = { zh: 'zh-CN' };
-const AIRBNB_HOST = { ko: 'www.airbnb.co.kr', en: 'www.airbnb.com', ja: 'www.airbnb.jp', zh: 'zh.airbnb.com', fr: 'www.airbnb.fr' };
+const LANGS = ['ko', 'en', 'ja', 'zh', 'zh-tw', 'fr'];
+const HTML_LANG = { zh: 'zh-CN', 'zh-tw': 'zh-Hant' };
+const AIRBNB_HOST = { ko: 'www.airbnb.co.kr', en: 'www.airbnb.com', ja: 'www.airbnb.jp', zh: 'zh.airbnb.com', 'zh-tw': 'www.airbnb.com.tw', fr: 'www.airbnb.fr' };
 const langSelect = document.getElementById('langSelect');
 const ROOM_PATH = { garden: 'rooms/8525016', alley: 'rooms/1070715217838494598' };
 
