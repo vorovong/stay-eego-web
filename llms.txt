@@ -71,11 +71,11 @@ Airbnb ratings: Garden room 4.99, Alleyway room 4.98, from 388 reviews in total.
 
 ## Pages
 
-- [한국어](https://vorovong.github.io/stay-eego-web/)
-- [English](https://vorovong.github.io/stay-eego-web/en/)
-- [日本語](https://vorovong.github.io/stay-eego-web/ja/)
-- [简体中文](https://vorovong.github.io/stay-eego-web/zh/)
-- [Français](https://vorovong.github.io/stay-eego-web/fr/)
+- [한국어](https://stayeego.com/)
+- [English](https://stayeego.com/en/)
+- [日本語](https://stayeego.com/ja/)
+- [简体中文](https://stayeego.com/zh/)
+- [Français](https://stayeego.com/fr/)
 - [Airbnb: Garden room](https://www.airbnb.com/rooms/8525016)
 - [Airbnb: Alleyway room](https://www.airbnb.com/rooms/1070715217838494598)
 - [Instagram](https://www.instagram.com/stay.eego/)
