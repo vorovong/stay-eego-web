@@ -28,7 +28,8 @@
 <meta property="og:url" content="https://stayeego.com/ja/story.html">
 <meta name="twitter:card" content="summary_large_image">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-72NQ8WRSH5"></script>
-<script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}
+<script>
+window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}
 if (location.hostname !== 'stayeego.com') window['ga-disable-G-72NQ8WRSH5'] = true;  // local previews are not counted
 gtag('consent', 'default', {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', region: ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});
 gtag('consent', 'default', {analytics_storage: 'granted', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
@@ -36,7 +37,8 @@ gtag('js', new Date()); gtag('config', 'G-72NQ8WRSH5', {allow_google_signals: fa
 document.addEventListener('click', function (e) { var a = e.target.closest && e.target.closest('a[href]'); if (!a) return;
   var h = a.getAttribute('href') || '';
   if (/airbnb\./.test(h)) gtag('event', 'booking_click', {link_url: a.href});
-  else if (/(^|\/)book\.html/.test(h)) gtag('event', 'calendar_open', {link_url: a.href}); });</script>
+  else if (/(^|\/)book\.html/.test(h)) gtag('event', 'calendar_open', {link_url: a.href}); });
+</script>
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "752a172775df4c0fae4427a42d4a7b02"}'></script>
 <!-- seo:end -->
 <meta name="theme-color" content="#1F3A2B">
