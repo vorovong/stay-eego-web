@@ -1,0 +1,67 @@
+# Stay Eego (스테이 이고)
+
+> Two guest rooms in a family home of more than sixty years, beside Suwon Hwaseong Fortress and an hour from Seoul. Breakfast is cooked by your hosts, a married couple.
+
+A two-room homestay in Haenggung-dong, Suwon, South Korea, run by the couple who live upstairs. Bookings and payment go through Airbnb. This file is a plain-text summary of the site for language models; the pages below are the source.
+
+## The house
+
+This house has been in the family since Nene’s grandfather, for more than sixty years now. Nene was born and raised in this neighbourhood. Minho moved to Haenggung-dong fifteen years ago and opened a guesthouse.
+Together we ran a restaurant in this house for several years. Now we keep just two rooms, so there are never more than two sets of guests in the house, and we have time to talk with every one of you.
+We live upstairs. We’re close by when you need us, and we’ll keep out of the way when you want to rest.
+
+## Rooms
+
+There are two rooms, both on the ground floor. Each has large windows and its own bathroom, and the beds and furniture were made to fit each room.
+- Alleyway room: This room’s window faces a Haenggung-dong alleyway. Through it you’ll see the neighbours’ earthenware jars and tiled roofs, and you can watch the neighbourhood go about its day without leaving your room. The furniture and lighting are in the same style as the Garden room. The room has its own toilet and shower inside.
+- Garden room: This room has a large window facing the garden. Lie in bed and the window fills with trees and sky, and the room gets plenty of sun during the day. Deep green walls, cherry-wood furniture and orange-toned lights give it a calm feel. The room has its own toilet and shower inside.
+- In each room: One queen bed, up to 2 guests; Private toilet and shower; Air conditioning and heated floors; Towels, hairdryer, shampoo and body wash; Lock on the room door; Breakfast included
+
+## Shared space and breakfast
+
+The guest lounge is shared by the guests in both rooms. Breakfast is served at the long table, and you’re welcome to relax there with a cup of tea or a book.
+The kitchen is where we make breakfast, so it isn’t open to guests. If you need plates, cutlery or a cup, just ask. We’ll set them out at your place, as a hotel would.
+We cook breakfast ourselves. It’s a Korean meal of rice, soup, a rolled omelette fresh from the pan and seasonal namul (seasoned vegetables), and it’s included in the room rate.
+If you’d prefer it not spicy, or there’s anything you can’t eat, please let us know in advance and we’ll prepare it to suit you.
+
+## Cats
+
+Neighbourhood cats wander through the garden, and our cat Siru lives indoors. Many guests end up sitting by the window and doing nothing but watching the cats.
+If you have a cat allergy, please let us know before you book.
+
+## Neighbourhood
+
+The path along the walls of Suwon Hwaseong Fortress (수원화성), places that have been open for decades, cafés down the lanes: you can walk to all of them from the house.
+When you arrive, we’ll start by asking what you enjoy. Then we’ll pick out places that suit you for that day. We’ve also mapped 29 places we go to regularly ourselves.
+
+## Getting here
+
+Address: 123-16 Sinpung-dong, Paldal-gu, Suwon, Gyeonggi-do (경기도 수원시 팔달구 신풍동 123-16)
+- From Seoul Station: Take the train to Suwon Station, then a taxi, and allow about an hour door to door. It’s about 30 km as the crow flies.
+- From Gangnam Station: Express buses to Suwon take about an hour. It’s about 24 km as the crow flies.
+- From Incheon Airport: Take the airport bus to Suwon Station, then a taxi, and allow about two hours door to door.
+- By car: You can park in front of the house. Please let us know before you arrive.
+
+## Common questions
+
+- Will we share the house with you? Yes. We live upstairs and the guest rooms are on the ground floor. The rooms and their bathrooms are for guests only, and the guest lounge on the ground floor is shared by the guests in both rooms. Only we use the kitchen, but we’re happy to bring you any tableware you need.
+- What languages do you speak? You can talk with us easily in Korean or English, and we speak a little Japanese.
+- What are the check-in and check-out times? Check-in is from 4 pm, and check-out is by 11 am.
+- Can I do laundry? We’ll help with your laundry free of charge. There’s a dryer as well.
+- Where do I book and pay? On Airbnb. The buttons on this page take you to Stay Eego’s listing there.
+
+## Reviews
+
+Airbnb ratings: Garden room 4.99, Alleyway room 4.98, from 388 reviews in total.
+
+## Pages
+
+- [한국어](https://vorovong.github.io/stay-eego-web/)
+- [English](https://vorovong.github.io/stay-eego-web/en/)
+- [日本語](https://vorovong.github.io/stay-eego-web/ja/)
+- [简体中文](https://vorovong.github.io/stay-eego-web/zh/)
+- [Français](https://vorovong.github.io/stay-eego-web/fr/)
+- [Airbnb: Garden room](https://www.airbnb.com/rooms/8525016)
+- [Airbnb: Alleyway room](https://www.airbnb.com/rooms/1070715217838494598)
+- [Instagram](https://www.instagram.com/stay.eego/)
+- [The hosts’ neighbourhood guide](https://vorovong.github.io/stay-eego-site/)
