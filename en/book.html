@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Available dates | Stay Eego 스테이 이고</title>
-<meta name="description" content="See available dates for each room at Stay Eego. Choose your dates and number of guests, then book on Airbnb.">
+<meta name="description" content="Availability calendar for Stay Eego’s two rooms (Alleyway and Garden). Pick your dates and number of guests, then book on Airbnb.">
 <!-- seo:start (written by scripts/stay_build_pages.py; edit stay/site.json or the script, not this block) -->
 <meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://stayeego.com/en/book.html">
@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Stay Eego">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="Available dates | Stay Eego 스테이 이고">
-<meta property="og:description" content="See available dates for each room at Stay Eego. Choose your dates and number of guests, then book on Airbnb.">
+<meta property="og:description" content="Availability calendar for Stay Eego’s two rooms (Alleyway and Garden). Pick your dates and number of guests, then book on Airbnb.">
 <meta property="og:image" content="https://stayeego.com/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -230,7 +230,7 @@ button.day { cursor: pointer; }
 
 <main class="wrap">
   <h1 data-i18n="title">Available dates</h1>
-  <p class="lead" data-i18n="lead">Choose a room, the number of guests and your dates, then select Continue to Airbnb. You’ll arrive at Airbnb’s booking page with everything filled in, and payment is made there.</p>
+  <p class="lead" data-i18n="lead">Choose your room, number of guests and dates, then press the button below to continue straight to Airbnb with your stay filled in. Booking and payment are completed on Airbnb.</p>
 
   <div id="cal" hidden>
     <div class="controls">
@@ -272,7 +272,7 @@ button.day { cursor: pointer; }
 
   <!-- shown only if the calendar data cannot be loaded -->
   <div id="fallback">
-    <p class="lead" data-i18n="fallbackSay">We can’t load the calendar right now. Please check dates directly on Airbnb.</p>
+    <p class="lead" data-i18n="fallbackSay">We couldn’t load the calendar just now. Please use the buttons below to check open dates directly on Airbnb.</p>
     <div class="fallback">
       <a class="btn" href="https://www.airbnb.co.kr/rooms/1070715217838494598" data-airbnb data-i18n="alleyAirbnb">Alleyway room on Airbnb</a>
       <a class="btn line" href="https://www.airbnb.co.kr/rooms/8525016" data-airbnb data-i18n="gardenAirbnb">Garden room on Airbnb</a>
@@ -302,7 +302,7 @@ const COPY = {
     pickBlocked: '선택하신 기간 사이에 이미 예약된 날이 끼어 있어 이어서 묵으실 수 없어요.',
     pickFull: '이미 예약이 마감된 날짜예요.'
   },
-  en: {"back": "Back to the rooms", "title": "Available dates", "lead": "Choose a room, the number of guests and your dates, then select Continue to Airbnb. You’ll arrive at Airbnb’s booking page with everything filled in, and payment is made there.", "roomLabel": "Room", "alley": "Alleyway room", "garden": "Garden room", "guestLabel": "Guests", "guest1": "1 guest", "guest2": "2 guests", "free": "Available", "full": "Booked", "go": "Continue to Airbnb", "fallbackSay": "We can’t load the calendar right now. Please check dates directly on Airbnb.", "alleyAirbnb": "Alleyway room on Airbnb", "gardenAirbnb": "Garden room on Airbnb", "prev": "Previous month", "next": "Next month", "alleySay": "Earthenware jars and tiled roofs outside the window", "gardenSay": "The garden’s trees and sky outside the window", "updated": "Availability as of {when}. Airbnb confirms the final availability.", "sample": "This calendar shows sample data, not real bookings.", "dayFree": "{date}, available", "dayFull": "{date}, booked", "pickNone": "Select your check-in date.", "pickSummary": "{room} · {guests} · {in} to {out} · {n} nights", "pickOk": "These dates are available to book.", "pickHint": "To stay longer, select your check-out date.", "pickBlocked": "Some nights in between are already booked, so you can’t choose those dates.", "pickFull": "That date is already booked.", "pageTitle": "Available dates | Stay Eego 스테이 이고", "metaDescription": "See available dates for each room at Stay Eego. Choose your dates and number of guests, then book on Airbnb.", "pickSummary1": "{room} · {guests} · {in} to {out} · {n} night"}, ja: {}, zh: {}, 'zh-tw': {}, fr: {}
+  en: {"back": "Back to the rooms", "title": "Available dates", "lead": "Choose your room, number of guests and dates, then press the button below to continue straight to Airbnb with your stay filled in. Booking and payment are completed on Airbnb.", "roomLabel": "Room", "alley": "Alleyway room", "garden": "Garden room", "guestLabel": "Guests", "guest1": "1 guest", "guest2": "2 guests", "free": "Available", "full": "Booked", "go": "Continue to Airbnb", "fallbackSay": "We couldn’t load the calendar just now. Please use the buttons below to check open dates directly on Airbnb.", "alleyAirbnb": "Alleyway room on Airbnb", "gardenAirbnb": "Garden room on Airbnb", "prev": "Previous month", "next": "Next month", "alleySay": "A room looking out over the neighbours’ earthenware jars and tiled roofs", "gardenSay": "A room where the window fills with the garden’s trees and sky", "updated": "Updated {when}. Final real-time availability is confirmed on the Airbnb screen that opens.", "sample": "The calendar shown right now is a sample view, not live booking data.", "dayFree": "{date}, available", "dayFull": "{date}, booked", "pickNone": "First, select your check-in date on the calendar.", "pickSummary": "{room} · {guests} · {in} to {out} · {n} nights", "pickOk": "Those dates are open to book.", "pickHint": "Staying two nights or more? Select your check-out date next.", "pickBlocked": "There’s an already-booked night in the middle of that range, so those dates can’t be combined.", "pickFull": "That night is already booked.", "pageTitle": "Available dates | Stay Eego 스테이 이고", "metaDescription": "Availability calendar for Stay Eego’s two rooms (Alleyway and Garden). Pick your dates and number of guests, then book on Airbnb.", "pickSummary1": "{room} · {guests} · {in} to {out} · {n} night"}, ja: {}, zh: {}, 'zh-tw': {}, fr: {}
 };
 const PAGE = 'book';
 // One address per language: scripts/stay_build_pages.py writes en/, ja/, zh/ and fr/ from this file,

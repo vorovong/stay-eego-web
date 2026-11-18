@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>空室状況 | Stay Eego ステイ・イゴ</title>
-<meta name="description" content="Stay Eegoのお部屋ごとの空室状況です。日付と人数を選んで、Airbnbからご予約いただけます。">
+<meta name="description" content="Stay Eegoの2つのお部屋（路地の部屋・庭の部屋）の空室カレンダーです。ご希望の日付と人数を選んで、Airbnbからそのままご予約いただけます。">
 <!-- seo:start (written by scripts/stay_build_pages.py; edit stay/site.json or the script, not this block) -->
 <meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://stayeego.com/ja/book.html">
@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Stay Eego">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:title" content="空室状況 | Stay Eego ステイ・イゴ">
-<meta property="og:description" content="Stay Eegoのお部屋ごとの空室状況です。日付と人数を選んで、Airbnbからご予約いただけます。">
+<meta property="og:description" content="Stay Eegoの2つのお部屋（路地の部屋・庭の部屋）の空室カレンダーです。ご希望の日付と人数を選んで、Airbnbからそのままご予約いただけます。">
 <meta property="og:image" content="https://stayeego.com/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -233,7 +233,7 @@ button.day { cursor: pointer; }
 
 <main class="wrap">
   <h1 data-i18n="title">空室状況</h1>
-  <p class="lead" data-i18n="lead">お部屋・人数・日付を選んで「Airbnbで予約する」を押すと、選んだ内容のままAirbnbの予約画面に移動します。お支払いはAirbnbで行います。</p>
+  <p class="lead" data-i18n="lead">泊まりたいお部屋と人数、日付を選んで下のボタンを押すと、選んだ日程のままAirbnbの予約画面へ進みます。ご予約とお支払いはAirbnbで行われます。</p>
 
   <div id="cal" hidden>
     <div class="controls">
@@ -275,7 +275,7 @@ button.day { cursor: pointer; }
 
   <!-- shown only if the calendar data cannot be loaded -->
   <div id="fallback">
-    <p class="lead" data-i18n="fallbackSay">ただいまカレンダーを読み込めません。Airbnbで直接日付をご確認ください。</p>
+    <p class="lead" data-i18n="fallbackSay">ただいまカレンダーを読み込めませんでした。下のボタンからAirbnbで直接空いている日付をご確認ください。</p>
     <div class="fallback">
       <a class="btn" href="https://www.airbnb.co.kr/rooms/1070715217838494598" data-airbnb data-i18n="alleyAirbnb">Airbnbで路地の部屋を見る</a>
       <a class="btn line" href="https://www.airbnb.co.kr/rooms/8525016" data-airbnb data-i18n="gardenAirbnb">Airbnbで庭の部屋を見る</a>
@@ -305,7 +305,7 @@ const COPY = {
     pickBlocked: '선택하신 기간 사이에 이미 예약된 날이 끼어 있어 이어서 묵으실 수 없어요.',
     pickFull: '이미 예약이 마감된 날짜예요.'
   },
-  en: {}, ja: {"back": "お部屋のご案内に戻る", "title": "空室状況", "lead": "お部屋・人数・日付を選んで「Airbnbで予約する」を押すと、選んだ内容のままAirbnbの予約画面に移動します。お支払いはAirbnbで行います。", "roomLabel": "お部屋", "alley": "路地の部屋", "garden": "庭の部屋", "guestLabel": "人数", "guest1": "1名", "guest2": "2名", "free": "空きあり", "full": "予約済み", "go": "Airbnbで予約する", "fallbackSay": "ただいまカレンダーを読み込めません。Airbnbで直接日付をご確認ください。", "alleyAirbnb": "Airbnbで路地の部屋を見る", "gardenAirbnb": "Airbnbで庭の部屋を見る", "prev": "前の月", "next": "次の月", "alleySay": "窓の外にかめ置き場と瓦屋根が見えるお部屋", "gardenSay": "窓の外に庭の木々と空が見えるお部屋", "updated": "{when}時点の情報です。予約できるかどうかは、最終的にAirbnbで確定します。", "sample": "いま表示しているカレンダーはサンプルデータで、実際の予約状況ではありません。", "dayFree": "{date} 空きあり", "dayFull": "{date} 予約済み", "pickNone": "チェックインする日を選んでください。", "pickSummary": "{room} · {guests} · {in}〜{out}（{n}泊）", "pickOk": "この日程でご予約いただけます。", "pickHint": "2泊以上の場合は、続けてチェックアウトの日を選んでください。", "pickBlocked": "途中に予約済みの日があるため、この日程は選べません。", "pickFull": "この日はすでに予約が入っています。", "pageTitle": "空室状況 | Stay Eego ステイ・イゴ", "metaDescription": "Stay Eegoのお部屋ごとの空室状況です。日付と人数を選んで、Airbnbからご予約いただけます。"}, zh: {}, 'zh-tw': {}, fr: {}
+  en: {}, ja: {"back": "お部屋のご案内に戻る", "title": "空室状況", "lead": "泊まりたいお部屋と人数、日付を選んで下のボタンを押すと、選んだ日程のままAirbnbの予約画面へ進みます。ご予約とお支払いはAirbnbで行われます。", "roomLabel": "お部屋", "alley": "路地の部屋", "garden": "庭の部屋", "guestLabel": "人数", "guest1": "1名", "guest2": "2名", "free": "空きあり", "full": "予約済み", "go": "Airbnbで予約する", "fallbackSay": "ただいまカレンダーを読み込めませんでした。下のボタンからAirbnbで直接空いている日付をご確認ください。", "alleyAirbnb": "Airbnbで路地の部屋を見る", "gardenAirbnb": "Airbnbで庭の部屋を見る", "prev": "前の月", "next": "次の月", "alleySay": "窓越しにお隣のチャンドクテ（かめ置き場）と瓦屋根が見下ろせるお部屋", "gardenSay": "窓いっぱいに庭の木々と空が広がるお部屋", "updated": "{when}更新時点の情報です。リアルタイムの空室状況は、移動先のAirbnb画面で最終的にご確認いただけます。", "sample": "現在表示されているカレンダーはサンプル画面であり、実際の予約状況ではありません。", "dayFree": "{date} 空きあり", "dayFull": "{date} 予約済み", "pickNone": "まずはカレンダーからチェックインの日付を選んでください。", "pickSummary": "{room} · {guests} · {in}〜{out}（{n}泊）", "pickOk": "ご予約いただける日程です。", "pickHint": "2泊以上ご滞在の場合は、続けてチェックアウトの日付をもう一度押してください。", "pickBlocked": "お選びの期間にすでに予約済みの日が含まれているため、続けてお泊まりいただくことができません。", "pickFull": "すでに予約が埋まっている日付です。", "pageTitle": "空室状況 | Stay Eego ステイ・イゴ", "metaDescription": "Stay Eegoの2つのお部屋（路地の部屋・庭の部屋）の空室カレンダーです。ご希望の日付と人数を選んで、Airbnbからそのままご予約いただけます。"}, zh: {}, 'zh-tw': {}, fr: {}
 };
 const PAGE = 'book';
 // One address per language: scripts/stay_build_pages.py writes en/, ja/, zh/ and fr/ from this file,
